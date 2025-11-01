@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         <div className="mb-8 flex justify-center">
           <img 
-            src="/play-perfect-logo.png" 
+            src={`${import.meta.env.BASE_URL}play-perfect-logo.png`}
             alt="Play Perfect Logo" 
             className="h-20 md:h-24 w-auto object-contain"
           />

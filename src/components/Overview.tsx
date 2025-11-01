@@ -85,7 +85,7 @@ const Overview = () => {
           
           <div className="mt-12 flex justify-center">
             <img 
-              src="/who-we-are.png" 
+              src={`${import.meta.env.BASE_URL}who-we-are.png`}
               alt="Who We Are" 
               className="max-w-2xl w-full h-auto rounded-3xl shadow-lg"
             />
