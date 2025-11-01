@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: '/play-perfect-group-manager-plan/',
+  base: mode === 'production' ? '/play-perfect-group-manager-plan/' : '/',
   server: {
     host: "::",
     port: 8080,
