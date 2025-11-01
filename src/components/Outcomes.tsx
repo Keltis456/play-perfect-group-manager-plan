@@ -1,4 +1,4 @@
-import { Award, TrendingUp, Shield, BookOpen } from "lucide-react";
+import { Award, TrendingUp, Shield, BookOpen, Map, Users, Bell, BarChart, AlertTriangle, Layers, Package } from "lucide-react";
 
 const kpis = [
   { label: "Build Stability", value: "≥ 95%", icon: Shield },
@@ -7,11 +7,68 @@ const kpis = [
   { label: "Team Training", value: "100%", icon: BookOpen }
 ];
 
-const deliverables = [
-  "Unified dev & art pipeline across all titles",
-  "Documented roadmap for live and new games",
-  "Defined on-call rotation and monitoring setup",
-  "Tech debt & risk register established"
+const strategicPlan = [
+  {
+    title: "Development Roadmap",
+    icon: Map,
+    items: [
+      "Documented pipeline for live game updates (quarterly milestones)",
+      "New game tech plan (core systems, shared SDKs)"
+    ]
+  },
+  {
+    title: "Team Structure",
+    icon: Users,
+    items: [
+      "Defined pods, lead roles, mentorship program",
+      "Cross-pod tech guilds"
+    ]
+  },
+  {
+    title: "Monitoring & On-Call",
+    icon: Bell,
+    items: [
+      "Automated build reports",
+      "Slack alerts for failed builds",
+      "Rotating on-call schedule for live titles"
+    ]
+  },
+  {
+    title: "KPIs & Tracking",
+    icon: BarChart,
+    items: [
+      "Weekly velocity, build stability %",
+      "Frame budget compliance, bug regression count",
+      "Feature delivery ratio"
+    ]
+  },
+  {
+    title: "Risk Mitigation",
+    icon: AlertTriangle,
+    items: [
+      "Identify codebase tech debt",
+      "Unify Unity versions",
+      "Reduce single-point dependencies",
+      "Add documentation coverage"
+    ]
+  },
+  {
+    title: "Unity–Tech Art Framework",
+    icon: Layers,
+    items: [
+      "Shared tools (ShaderLib, TextureValidator, VFX budget monitor)",
+      "Co-review pipeline for new features"
+    ]
+  },
+  {
+    title: "Multi-Game Framework",
+    icon: Package,
+    items: [
+      "Common SDK (analytics, ads, remote config)",
+      "Shared UI kit, addressable system",
+      "CI/CD templates"
+    ]
+  }
 ];
 
 const Outcomes = () => {
@@ -26,40 +83,38 @@ const Outcomes = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-black text-white mb-4 uppercase tracking-tight">
-            90-Day <span className="text-play-yellow">Outcomes</span> & KPIs
+            90-Day <span className="text-play-yellow">Strategic</span> Plan
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto font-semibold">
-            Measurable results that transform team performance
+            Comprehensive framework for team transformation
           </p>
         </div>
 
-        {/* KPIs Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {kpis.map((kpi, index) => {
-            const Icon = kpi.icon;
-            return (
-              <div 
-                key={index}
-                className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border-2 border-white/30 hover:bg-white/15 hover:border-play-yellow transition-all duration-300 hover:scale-105 text-center"
-              >
-                <Icon className="w-12 h-12 text-play-yellow mb-4 mx-auto" />
-                <div className="text-4xl font-black text-white mb-2">{kpi.value}</div>
-                <div className="text-white/80 font-semibold uppercase text-xs tracking-wider">{kpi.label}</div>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Strategic Deliverables */}
+        {/* Strategic Plan */}
         <div className="bg-white/10 backdrop-blur-md rounded-3xl p-10 border-2 border-white/30 mb-12">
-          <h3 className="text-3xl font-black text-white mb-8 uppercase">Strategic <span className="text-play-yellow">Deliverables</span></h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            {deliverables.map((item, index) => (
-              <div key={index} className="flex items-start gap-4">
-                <div className="w-3 h-3 rounded-full bg-play-pink flex-shrink-0 mt-2" />
-                <span className="text-white font-medium text-lg">{item}</span>
-              </div>
-            ))}
+          <h3 className="text-3xl font-black text-white mb-8 uppercase">Strategic <span className="text-play-yellow">Plan</span></h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {strategicPlan.map((section, index) => {
+              const Icon = section.icon;
+              return (
+                <div key={index} className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/10 transition-all">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-10 h-10 bg-play-yellow/20 rounded-xl flex items-center justify-center">
+                      <Icon className="w-5 h-5 text-play-yellow" />
+                    </div>
+                    <h4 className="text-lg font-black text-white">{section.title}</h4>
+                  </div>
+                  <ul className="space-y-2">
+                    {section.items.map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <div className="w-1.5 h-1.5 rounded-full bg-play-pink flex-shrink-0 mt-2" />
+                        <span className="text-white/90 font-medium text-sm leading-relaxed">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
           </div>
         </div>
 

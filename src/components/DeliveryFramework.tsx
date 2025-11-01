@@ -1,9 +1,18 @@
 import { Gamepad2, Rocket, Wrench } from "lucide-react";
 
-const frameworks = [
+interface Framework {
+  icon: typeof Gamepad2;
+  title: string;
+  logos?: string[];
+  items: string[];
+  color: string;
+}
+
+const frameworks: Framework[] = [
   {
     icon: Gamepad2,
     title: "Live Games",
+    logos: ["/solitaire-smash-logo.png", "/bingo.png"],
     items: [
       "Stabilize performance, reduce hotfix churn",
       "Quarterly feature roadmap with measurable KPIs"
@@ -57,6 +66,19 @@ const DeliveryFramework = () => {
                 </div>
 
                 <h3 className="text-2xl font-black text-foreground mb-6">{framework.title}</h3>
+                
+                {framework.logos && framework.logos.length > 0 && (
+                  <div className="mb-6 flex justify-center gap-4 flex-wrap">
+                    {framework.logos.map((logo, logoIdx) => (
+                      <img 
+                        key={logoIdx}
+                        src={logo} 
+                        alt={`${framework.title} Game ${logoIdx + 1}`}
+                        className="h-32 w-auto object-contain"
+                      />
+                    ))}
+                  </div>
+                )}
 
                 <ul className="space-y-4">
                   {framework.items.map((item, idx) => (

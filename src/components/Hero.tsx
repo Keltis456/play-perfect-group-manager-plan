@@ -1,5 +1,3 @@
-import { ArrowDown } from "lucide-react";
-
 const Hero = () => {
   const scrollToContent = () => {
     document.getElementById("overview")?.scrollIntoView({ behavior: "smooth" });
@@ -15,6 +13,14 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
+        <div className="mb-8 flex justify-center">
+          <img 
+            src="/play-perfect-logo.png" 
+            alt="Play Perfect Logo" 
+            className="h-20 md:h-24 w-auto object-contain"
+          />
+        </div>
+        
         <div className="inline-block mb-8 px-6 py-3 bg-play-pink/20 backdrop-blur-sm rounded-full border-2 border-play-pink/40">
           <span className="text-play-yellow font-bold tracking-wide text-lg uppercase">90-Day Transformation Plan</span>
         </div>
@@ -23,12 +29,12 @@ const Hero = () => {
           PLAY PERFECT
         </h1>
         <h2 className="text-4xl md:text-6xl font-black mb-8 leading-tight tracking-tight">
-          <span className="text-play-yellow">Unity Group</span>
-          <span className="text-white"> Manager</span>
+          <span className="text-play-yellow">Unity Team</span>
+          <span className="text-white"> Lead</span>
         </h2>
         
         <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed font-semibold">
-          Strategic onboarding framework by <span className="text-play-yellow font-bold">Alex Turner</span> — Unity Technical Director with 12+ years at Playtika, Voodoo, and Nexon
+          Strategic onboarding framework by <span className="text-play-yellow font-bold">Mykyta Brik</span> — Unity Team Lead with 8+ years of experience at Moon Active, Bini Bambini and Sett AI
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -42,14 +48,6 @@ const Hero = () => {
             <span className="text-play-yellow">3 Phases</span> • <span className="text-play-yellow">90 Days</span> • <span className="text-play-yellow">1 Mission</span>
           </div>
         </div>
-
-        <button 
-          onClick={scrollToContent}
-          className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce"
-          aria-label="Scroll down"
-        >
-          <ArrowDown className="w-10 h-10 text-play-yellow" />
-        </button>
       </div>
     </section>
   );

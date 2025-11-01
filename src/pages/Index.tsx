@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
 import Overview from "@/components/Overview";
 import TeamStrategy from "@/components/TeamStrategy";
-import DeliveryFramework from "@/components/DeliveryFramework";
 import Outcomes from "@/components/Outcomes";
 
 const Index = () => {
@@ -10,7 +9,6 @@ const Index = () => {
       <Hero />
       <Overview />
       <TeamStrategy />
-      <DeliveryFramework />
       <Outcomes />
     </main>
   );
