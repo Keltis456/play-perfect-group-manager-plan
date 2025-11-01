@@ -8,7 +8,7 @@ const frameworks = [
       "Stabilize performance, reduce hotfix churn",
       "Quarterly feature roadmap with measurable KPIs"
     ],
-    color: "from-blue-500 to-blue-600"
+    color: "bg-gradient-to-br from-play-purple to-play-blue"
   },
   {
     icon: Rocket,
@@ -17,7 +17,7 @@ const frameworks = [
       "2-week pre-production sprint (core loop, architecture)",
       "Vertical slice by Day 90 using shared tech stack"
     ],
-    color: "from-purple-500 to-purple-600"
+    color: "bg-gradient-pink"
   },
   {
     icon: Wrench,
@@ -27,7 +27,7 @@ const frameworks = [
       "CI/CD build automation & Slack alerts",
       '"Play Perfect Tech Handbook" for dev + art standards'
     ],
-    color: "from-cyan-500 to-cyan-600"
+    color: "bg-gradient-to-br from-play-blue to-cyan-500"
   }
 ];
 
@@ -36,10 +36,10 @@ const DeliveryFramework = () => {
     <section className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Parallel Delivery Framework
+          <h2 className="text-4xl md:text-5xl font-black text-foreground mb-4 uppercase tracking-tight">
+            Parallel <span className="text-play-pink">Delivery</span> Framework
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-semibold">
             Simultaneous execution across live games, new development, and foundational tools
           </p>
         </div>
@@ -50,19 +50,19 @@ const DeliveryFramework = () => {
             return (
               <div 
                 key={index}
-                className="group bg-card rounded-2xl p-8 shadow-md hover:shadow-glow transition-all duration-300 hover:-translate-y-2 border border-border"
+                className="group bg-card rounded-3xl p-8 shadow-lg hover:shadow-glow transition-all duration-300 hover:-translate-y-2 border-2 border-border hover:border-play-yellow"
               >
-                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br ${framework.color} mb-6 shadow-md group-hover:scale-110 transition-transform duration-300`}>
-                  <Icon className="w-8 h-8 text-white" />
+                <div className={`inline-flex items-center justify-center w-20 h-20 rounded-2xl ${framework.color} mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                  <Icon className="w-10 h-10 text-white" />
                 </div>
 
-                <h3 className="text-2xl font-bold text-foreground mb-6">{framework.title}</h3>
+                <h3 className="text-2xl font-black text-foreground mb-6">{framework.title}</h3>
 
-                <ul className="space-y-3">
+                <ul className="space-y-4">
                   {framework.items.map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0 mt-2" />
-                      <span className="text-foreground text-sm leading-relaxed">{item}</span>
+                      <div className="w-2 h-2 rounded-full bg-play-pink flex-shrink-0 mt-2" />
+                      <span className="text-foreground font-medium leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>

@@ -8,80 +8,89 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 215 25% 15%;
+    --background: 0 0% 100%;
+    --foreground: 240 50% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card-foreground: 240 50% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover-foreground: 240 50% 10%;
 
-    --primary: 215 70% 25%;
+    --primary: 263 90% 51%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 15% 92%;
-    --secondary-foreground: 215 25% 15%;
+    --secondary: 328 100% 54%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 15% 95%;
-    --muted-foreground: 215 15% 45%;
+    --muted: 240 10% 95%;
+    --muted-foreground: 240 10% 45%;
 
-    --accent: 190 95% 45%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 52 100% 50%;
+    --accent-foreground: 240 50% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 20% 88%;
-    --input: 210 20% 88%;
-    --ring: 190 95% 45%;
+    --border: 240 10% 90%;
+    --input: 240 10% 90%;
+    --ring: 328 100% 54%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    --gradient-hero: linear-gradient(135deg, hsl(215 70% 25%) 0%, hsl(205 80% 35%) 100%);
-    --gradient-card: linear-gradient(to bottom right, hsl(0 0% 100%) 0%, hsl(210 20% 98%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(190 95% 45%) 0%, hsl(200 100% 55%) 100%);
+    /* Play Perfect Brand Colors */
+    --play-purple: 263 90% 51%;
+    --play-blue: 210 100% 56%;
+    --play-pink: 328 100% 54%;
+    --play-yellow: 52 100% 50%;
+    --play-navy: 240 50% 10%;
+
+    /* Gradients matching Play Perfect */
+    --gradient-hero: linear-gradient(90deg, hsl(263 90% 51%) 0%, hsl(210 100% 56%) 100%);
+    --gradient-purple-blue: linear-gradient(135deg, hsl(263 90% 51%) 0%, hsl(210 100% 56%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(240 20% 98%) 100%);
+    --gradient-pink: linear-gradient(135deg, hsl(328 100% 54%) 0%, hsl(338 100% 60%) 100%);
     
-    --shadow-sm: 0 1px 2px 0 hsl(215 25% 15% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(215 25% 15% / 0.1);
-    --shadow-lg: 0 10px 25px -5px hsl(215 25% 15% / 0.15);
-    --shadow-glow: 0 0 30px hsl(190 95% 45% / 0.2);
+    --shadow-sm: 0 2px 4px 0 hsl(240 50% 10% / 0.08);
+    --shadow-md: 0 4px 12px -2px hsl(240 50% 10% / 0.15);
+    --shadow-lg: 0 12px 32px -8px hsl(240 50% 10% / 0.2);
+    --shadow-glow: 0 0 40px hsl(328 100% 54% / 0.4);
+    --shadow-yellow: 0 0 30px hsl(52 100% 50% / 0.5);
 
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    --background: 215 30% 8%;
-    --foreground: 210 20% 95%;
+    --background: 240 50% 10%;
+    --foreground: 0 0% 100%;
 
-    --card: 215 25% 12%;
-    --card-foreground: 210 20% 95%;
+    --card: 240 40% 15%;
+    --card-foreground: 0 0% 100%;
 
-    --popover: 215 25% 12%;
-    --popover-foreground: 210 20% 95%;
+    --popover: 240 40% 15%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 190 95% 45%;
-    --primary-foreground: 215 30% 8%;
+    --primary: 263 90% 51%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 215 20% 18%;
-    --secondary-foreground: 210 20% 95%;
+    --secondary: 328 100% 54%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 215 20% 18%;
-    --muted-foreground: 215 15% 60%;
+    --muted: 240 30% 20%;
+    --muted-foreground: 240 10% 70%;
 
-    --accent: 190 95% 45%;
-    --accent-foreground: 215 30% 8%;
+    --accent: 52 100% 50%;
+    --accent-foreground: 240 50% 10%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 20% 95%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 215 20% 18%;
-    --input: 215 20% 18%;
-    --ring: 190 95% 45%;
+    --border: 240 30% 25%;
+    --input: 240 30% 25%;
+    --ring: 328 100% 54%;
 
-    --gradient-hero: linear-gradient(135deg, hsl(215 40% 15%) 0%, hsl(205 50% 25%) 100%);
-    --gradient-card: linear-gradient(to bottom right, hsl(215 25% 12%) 0%, hsl(215 20% 18%) 100%);
-    --shadow-glow: 0 0 30px hsl(190 95% 45% / 0.3);
+    --shadow-glow: 0 0 40px hsl(328 100% 54% / 0.5);
+    --shadow-yellow: 0 0 30px hsl(52 100% 50% / 0.6);
   }
 }
 

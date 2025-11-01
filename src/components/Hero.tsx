@@ -6,38 +6,40 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
-      {/* Animated background pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-accent rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent rounded-full blur-3xl animate-pulse delay-1000" />
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-purple-blue overflow-hidden">
+      {/* Animated background pattern - gaming aesthetic */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-20 w-96 h-96 bg-play-pink rounded-full blur-3xl opacity-30 animate-pulse" />
+        <div className="absolute bottom-20 right-20 w-[500px] h-[500px] bg-play-blue rounded-full blur-3xl opacity-30 animate-pulse" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-play-yellow rounded-full blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '2s' }} />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        <div className="inline-block mb-6 px-4 py-2 bg-accent/20 backdrop-blur-sm rounded-full border border-accent/30">
-          <span className="text-accent font-semibold tracking-wide">90-Day Transformation Plan</span>
+      <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
+        <div className="inline-block mb-8 px-6 py-3 bg-play-pink/20 backdrop-blur-sm rounded-full border-2 border-play-pink/40">
+          <span className="text-play-yellow font-bold tracking-wide text-lg uppercase">90-Day Transformation Plan</span>
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-          Play Perfect
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-300">
-            Unity Group Manager
-          </span>
+        <h1 className="text-6xl md:text-8xl font-black text-white mb-4 leading-none tracking-tight">
+          PLAY PERFECT
         </h1>
+        <h2 className="text-4xl md:text-6xl font-black mb-8 leading-tight tracking-tight">
+          <span className="text-play-yellow">Unity Group</span>
+          <span className="text-white"> Manager</span>
+        </h2>
         
-        <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Strategic onboarding framework by Alex Turner — Unity Technical Director with 12+ years at Playtika, Voodoo, and Nexon
+        <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed font-semibold">
+          Strategic onboarding framework by <span className="text-play-yellow font-bold">Alex Turner</span> — Unity Technical Director with 12+ years at Playtika, Voodoo, and Nexon
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <button 
             onClick={scrollToContent}
-            className="group px-8 py-4 bg-accent hover:bg-accent/90 text-white rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-glow hover:scale-105"
+            className="group px-10 py-5 bg-play-pink hover:bg-play-pink/90 text-white rounded-2xl font-black text-xl transition-all duration-300 shadow-glow hover:shadow-glow hover:scale-105 uppercase tracking-wide"
           >
             Explore the Plan
           </button>
-          <div className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white rounded-lg border border-white/20">
-            3 Phases • 90 Days • 1 Mission
+          <div className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white rounded-2xl border-2 border-white/30 font-bold">
+            <span className="text-play-yellow">3 Phases</span> • <span className="text-play-yellow">90 Days</span> • <span className="text-play-yellow">1 Mission</span>
           </div>
         </div>
 
@@ -46,7 +48,7 @@ const Hero = () => {
           className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce"
           aria-label="Scroll down"
         >
-          <ArrowDown className="w-8 h-8 text-white/70" />
+          <ArrowDown className="w-10 h-10 text-play-yellow" />
         </button>
       </div>
     </section>

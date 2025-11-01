@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Outfit', 'system-ui', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,17 +50,24 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        'play-purple': 'hsl(var(--play-purple))',
+        'play-blue': 'hsl(var(--play-blue))',
+        'play-pink': 'hsl(var(--play-pink))',
+        'play-yellow': 'hsl(var(--play-yellow))',
+        'play-navy': 'hsl(var(--play-navy))',
       },
       backgroundImage: {
         'gradient-hero': 'var(--gradient-hero)',
+        'gradient-purple-blue': 'var(--gradient-purple-blue)',
         'gradient-card': 'var(--gradient-card)',
-        'gradient-accent': 'var(--gradient-accent)',
+        'gradient-pink': 'var(--gradient-pink)',
       },
       boxShadow: {
         'sm': 'var(--shadow-sm)',
         'md': 'var(--shadow-md)',
         'lg': 'var(--shadow-lg)',
         'glow': 'var(--shadow-glow)',
+        'yellow': 'var(--shadow-yellow)',
       },
       transitionProperty: {
         'smooth': 'var(--transition-smooth)',
