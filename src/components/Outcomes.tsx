@@ -1,4 +1,4 @@
-import { Award, TrendingUp, Shield, BookOpen, Map, Users, Bell, BarChart, AlertTriangle, Layers, Package } from "lucide-react";
+import { Award, TrendingUp, Shield, BookOpen, Map, Users, Bell, BarChart, AlertTriangle, Layers, Package, Calendar } from "lucide-react";
 
 const kpis = [
   { label: "Build Stability", value: "≥ 95%", icon: Shield },
@@ -22,6 +22,14 @@ const strategicPlan = [
     items: [
       "Defined pods, lead roles, mentorship program",
       "Cross-pod tech guilds"
+    ]
+  },
+  {
+    title: "Cross-Department Alignment",
+    icon: Calendar,
+    items: [
+      "Weekly Product–Tech–Design Syncs: prioritize backlog, review blockers",
+      "Monthly Leadership Review: report on team performance, KPIs, risk mitigation"
     ]
   },
   {

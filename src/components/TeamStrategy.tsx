@@ -1,4 +1,4 @@
-import { Users, Layers, GitBranch, CheckCircle, Target, Code, Calendar } from "lucide-react";
+import { Users, Layers, GitBranch, CheckCircle, Target, Code } from "lucide-react";
 
 const TeamStrategy = () => {
   return (
@@ -110,27 +110,6 @@ const TeamStrategy = () => {
           </div>
         </div>
 
-        {/* Cross-Department Alignment */}
-        <div className="bg-gradient-purple-blue rounded-3xl p-10 shadow-xl text-white">
-          <div className="flex items-start gap-4 mb-8">
-            <div className="flex-shrink-0 w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
-              <Calendar className="w-8 h-8 text-white" />
-            </div>
-            <div>
-              <h3 className="text-3xl font-black mb-2 uppercase">Cross-Department Alignment</h3>
-            </div>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-white/30 hover:bg-white/15 transition-all">
-              <h4 className="font-black mb-3 text-play-yellow text-lg">Weekly Product–Tech–Design Syncs</h4>
-              <p className="text-white/90 font-medium">Prioritize backlog, review blockers</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-white/30 hover:bg-white/15 transition-all">
-              <h4 className="font-black mb-3 text-play-yellow text-lg">Monthly Leadership Review</h4>
-              <p className="text-white/90 font-medium">Report on team performance, KPIs, risk mitigation</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
