@@ -29,12 +29,12 @@ const Hero = () => {
           PLAY PERFECT
         </h1>
         <h2 className="text-4xl md:text-6xl font-black mb-8 leading-tight tracking-tight">
-          <span className="text-play-yellow">Unity Team</span>
-          <span className="text-white"> Lead</span>
+          <span className="text-play-yellow">Unity Group</span>
+          <span className="text-white"> Manager</span>
         </h2>
         
         <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed font-semibold">
-          Strategic onboarding framework by <span className="text-play-yellow font-bold">Mykyta Brik</span> — Unity Team Lead with 8+ years of experience at Moon Active, Bini Bambini and Sett AI
+          Strategic onboarding framework by <span className="text-play-yellow font-bold">Mykyta Brik</span> — Unity Group Manager with 8+ years of experience at Moon Active, Bini Bambini and Sett AI
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
