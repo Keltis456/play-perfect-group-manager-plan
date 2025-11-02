@@ -13,7 +13,8 @@ const strategicPlan = [
     icon: Map,
     items: [
       "Documented pipeline for live game updates (quarterly milestones)",
-      "New game tech plan (core systems, shared SDKs)"
+      "New game tech plan (core systems, shared SDKs)",
+      "Migrate from single git repo to multiple UPM packages for better modularity"
     ]
   },
   {
@@ -28,7 +29,7 @@ const strategicPlan = [
     title: "Cross-Department Alignment",
     icon: Calendar,
     items: [
-      "Weekly Product–Tech–Design Syncs: prioritize backlog, review blockers",
+      "Bi-weekly Product–Tech–Design Syncs: prioritize backlog, review blockers",
       "Monthly Leadership Review: report on team performance, KPIs, risk mitigation"
     ]
   },

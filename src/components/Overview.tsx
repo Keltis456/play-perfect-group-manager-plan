@@ -36,7 +36,7 @@ const phases = [
     ],
     focusAreas: [
       "Team Organization: Define roles, ownership, and escalation flow across Ukraine & Israel",
-      "Unity–Tech Art Sync: Weekly cross-disciplinary review (profiling, shaders, optimization, VFX integration)",
+      "Unity–Tech Art Sync: Bi-weekly cross-disciplinary review (profiling, shaders, optimization, VFX integration, asset management)",
       "Process Implementation: Branching model (main/dev/feature), code review & merge standards, performance & build KPIs per project",
       "Pre-Production for New Game: Tech evaluation (core loop, scene structure, tools, scalability)"
     ],
